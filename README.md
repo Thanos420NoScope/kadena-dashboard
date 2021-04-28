@@ -26,7 +26,6 @@ Backfill the database to get previous data
 This takes about 24hours  
 
 `cd ~/kda`  
-
 `./chainweb-data backfill --service-host=127.0.0.1 --service-port=1848 --p2p-host=127.0.0.1 --p2p-port=8443  --dbuser=datauser --dbpass=datapass --dbname=data && ./chainweb-data gaps --service-host=127.0.0.1 --service-port=1848 --p2p-host=127.0.0.1 --p2p-port=8443  --dbuser=datauser --dbpass=datapass --dbname=data && ./faststats.sh && ./richnmod.sh && ./getips.sh`  
 
 # Conect to Metabase  
