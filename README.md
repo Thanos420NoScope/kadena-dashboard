@@ -17,9 +17,7 @@ Make sure the user has sudo permissions
 ### Install the dashboard  
 Answer the 2 questions  
 If there is any errors during the install there is a log at /tmp/install.log  
-`wget https://raw.githubusercontent.com/Thanos420NoScope/kadena-dashboard/master/install.sh`  
-`chmod +x install.sh`  
-`./install.sh`  
+`wget https://raw.githubusercontent.com/Thanos420NoScope/kadena-dashboard/master/install.sh && chmod +x install.sh && ./install.sh`  
 
 # Initial data fill  
 Backfill the database to get previous data  
