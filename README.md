@@ -49,3 +49,14 @@ If your server cant keep up, make the crons happen less olften
 Kadena Statistics	https://YOURURL/public/dashboard/f0513f15-8d0d-4e50-950f-35f6a72c0fe2  
 Exchanges Wallet	https://YOURURL/public/dashboard/744d2814-8b18-4dcb-8b07-ace39d49d5b0  
 Pool Blocks	    https://YOURURL/public/dashboard/13fd07aa-08ef-4440-ac35-025b8584ba58  
+
+# Update
+
+```bash
+cd /root/kda
+systemctl stop kadena-node
+rm chainweb-node
+wget https://github.com/kadena-io/chainweb-node/releases/download/2.9/chainweb-2.9.ghc-8.10.5.ubuntu-20.04.1cf40e7.tar.gz
+tar -xvf chainweb-2.9.ghc-8.10.5.ubuntu-20.04.1cf40e7.tar.gz
+systemctl start kadena-node
+```
