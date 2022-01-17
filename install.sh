@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##################
-# Script by Thanos 
+# Script by Thanos
 ##################
 
 log_file=/tmp/install.log
@@ -94,14 +94,14 @@ sudo -u postgres psql -c "CREATE DATABASE data;"  >> $log_file 2>&1
 
 # --- NODE BINARY SETUP --- #
 
-node=https://github.com/kadena-io/chainweb-node/releases/download/2.10/chainweb-2.10.ghc-8.10.7.ubuntu-20.04.cd8cbe0.tar.gz
+node=https://github.com/kadena-io/chainweb-node/releases/download/2.12/chainweb-2.12.ghc-8.10.7.ubuntu-20.04.0aba2d1.tar.gz
 miner=https://github.com/kadena-io/chainweb-miner/releases/download/v1.0.3/chainweb-miner-1.0.3-ubuntu-18.04.tar.gz
 
 decho "Downloading Node..."
 mkdir -p /home/$user/kda
 cd /home/$user/kda/
 wget --no-check-certificate $node >> $log_file 2>&1
-tar -xvf chainweb-2.10.ghc-8.10.7.ubuntu-20.04.cd8cbe0.tar.gz >> $log_file 2>&1
+tar -xvf chainweb-2.12.ghc-8.10.7.ubuntu-20.04.0aba2d1.tar.gz >> $log_file 2>&1
 wget --no-check-certificate $miner >> $log_file 2>&1
 tar -xvf chainweb-miner-1.0.3-ubuntu-18.04.tar.gz >> $log_file 2>&1
 

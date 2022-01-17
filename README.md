@@ -33,7 +33,7 @@ Default settings are
 some@email.com  
 mysecretpassword1  
 
-In admin section change SITE URL 
+In admin section change SITE URL
 
 # Change passwords  
 Metabase  
@@ -56,7 +56,7 @@ Pool Blocks	    https://YOURURL/public/dashboard/13fd07aa-08ef-4440-ac35-025b858
 cd /root/kda
 systemctl stop kadena-node
 rm chainweb-node
-wget https://github.com/kadena-io/chainweb-node/releases/download/2.9/chainweb-2.9.ghc-8.10.5.ubuntu-20.04.1cf40e7.tar.gz
-tar -xvf chainweb-2.9.ghc-8.10.5.ubuntu-20.04.1cf40e7.tar.gz
+wget https://github.com/kadena-io/chainweb-node/releases/download/2.12/chainweb-2.12.ghc-8.10.7.ubuntu-20.04.0aba2d1.tar.gz
+tar -xvf chainweb-2.12.ghc-8.10.7.ubuntu-20.04.0aba2d1.tar.gz
 systemctl start kadena-node
 ```
